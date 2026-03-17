@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI poem generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Poems!</h1>
+      </header>
+      <main>
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter a word for me to make a poem about..."
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+            id="user-prompt"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div class="returned-poem hidden" id="poem"></div>
+      </main>
+
+      <footer>
+        This project is coded by Laura Brennan and is open-sourced on
+        <a
+          href="https://github.com/LaBren90/SheCodes-poem-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://papaya-faloodeh-0769ca.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+        .
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
