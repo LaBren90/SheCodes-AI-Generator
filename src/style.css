@@ -43,6 +43,12 @@ form {
   color: white;
 }
 
+.hints {
+  font-size: 11px;
+  margin-top: 10px;
+  opacity: 70%;
+}
+
 .returned-fact {
   font-size: 14px;
   background-color: white;

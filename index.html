@@ -17,7 +17,7 @@
         <form id="fact-generator-form">
           <input
             type="text"
-            placeholder="Enter the name of a country you'd like to see a fact about..."
+            placeholder="Enter the name of a country or region you'd like to see a fact about..."
             autofocus
             required
             autocomplete="off"
@@ -25,6 +25,8 @@
             id="user-prompt"
           />
           <input type="submit" class="button" />
+          <br />
+          <div class="hints">e.g. France, South America, The Himalayas</div>
         </form>
         <div class="returned-fact hidden" id="fact"></div>
       </main>
