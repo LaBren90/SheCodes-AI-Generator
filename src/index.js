@@ -18,7 +18,11 @@ function generateFact(event) {
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let FactElement = document.querySelector("#fact");
   FactElement.classList.remove("hidden");
-  FactElement.innerHTML = `<div class="animate-flicker">⏳Generating your fact about ${promptInput.value}...</div>`;
+  FactElement.innerHTML = `<div class="animate-flicker">⏳Generating your fact about ${promptInput.value
+    .trim()
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ")}...</div>`;
 
   axios.get(apiURL).then(displayFact);
 }
